@@ -9,7 +9,13 @@ This is a React-based email client app with features similar to Microsoft Outloo
 
 ![Screenshot (117)](https://github.com/Bandinikhil/client-email-webapp/assets/105233916/842c6af4-cd46-403e-9254-cde0a5eb8332)
 
+
+
+
 ![Screenshot (118)](https://github.com/Bandinikhil/client-email-webapp/assets/105233916/f63d115d-8298-4dbc-b3e6-14902dcfd34a)
+
+
+
 
 ![Screenshot (119)](https://github.com/Bandinikhil/client-email-webapp/assets/105233916/57013ce8-af03-44b5-a21b-0215c7c3b016)
 
