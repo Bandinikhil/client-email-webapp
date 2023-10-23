@@ -1,3 +1,77 @@
+# Email Client App
+
+This is a React-based email client app with features similar to Microsoft Outlook. The app fetches email data from an API and provides functionality to view, mark as favorite, and filter emails.
+
+## Deployed Link
+[client-email-webApp](https://client-email-webapp.netlify.app/)
+
+## ScreenShoots of WebApp
+
+![Screenshot (117)](https://github.com/Bandinikhil/client-email-webapp/assets/105233916/842c6af4-cd46-403e-9254-cde0a5eb8332)
+
+![Screenshot (118)](https://github.com/Bandinikhil/client-email-webapp/assets/105233916/f63d115d-8298-4dbc-b3e6-14902dcfd34a)
+
+![Screenshot (119)](https://github.com/Bandinikhil/client-email-webapp/assets/105233916/57013ce8-af03-44b5-a21b-0215c7c3b016)
+
+
+## Overview
+
+The email client app allows users to view a list of emails sent to them. Clicking on an email item displays its content in a split-screen format, with the email list on the left and the email body on the right. The app provides options to mark emails as favorites, distinguish between read and unread emails, and filter emails based on these criteria.
+
+## Features
+
+
+- **Email List Page**: Displays a list of emails fetched from the API.
+- **Email Details View**: Clicking on an email item opens the email details, including subject, body, and date and time.
+- **Mark as Favorite**: Allows users to mark an email as a favorite using a button in the email body section.
+- **Filtering**: Supports filtering emails by "favorites," "read," and "unread."
+- **Date and Time Format**: Displays the date in the format "dd/MM/yyyy hh:mm a."
+- **Persistent Storage**: Persists favorited and read emails across sessions.
+- **Visual Aesthetics**: Adheres to a minimalist visual design/layout inspired by the provided mocks.
+- **Modular Code Design**: Emphasizes code modularity and clean design for performance.
+
+## API Sources
+
+- [Emails List APIs](https://flipkart-email-mock.now.sh/): Fetches email data from an API.
+  - [https://flipkart-email-mock.now.sh/](https://flipkart-email-mock.now.sh/)
+  - [https://flipkart-email-mock.now.sh/?page=<pageNumber>](https://flipkart-email-mock.now.sh/?page=<pageNumber>)
+- [Email Body API](https://flipkart-email-mock.now.sh/?id=<email-item-id>)
+
+## Installation
+
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Run `npm install` to install the required dependencies.
+
+## Usage
+
+1. Run `npm start` to start the development server.
+2. Open your web browser and access the app at http://localhost:3000.
+
+## Technologies
+
+- React
+- Redux
+- CSS
+
+## Contributing
+
+Contributions are welcome! Please follow the GitHub flow for contributing to this project.
+
+1. Fork the repository.
+2. Create a new branch with your feature or bug fix.
+3. Commit your changes.
+4. Push to your branch.
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
