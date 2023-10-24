@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { EMAIL_ITEM_API } from "./constants";
 
 const useEmailListItem = (id) => {
   const [resInfo, setResInfo] = useState(null);
@@ -9,7 +10,7 @@ const useEmailListItem = (id) => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://flipkart-email-mock.vercel.app/?id=" + id
+        EMAIL_ITEM_API + id
     );
     const json = await data.json();
     console.log(json);

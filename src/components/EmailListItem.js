@@ -4,6 +4,7 @@ import "./styles.css";
 import { useDispatch } from "react-redux";
 import { addread } from "../utils/readSlice";
 
+//filtered data displays on the dom
 const EmailListItem = ({ email, isFavorite }) => {
   const [reading, setReading] = useState(false);
   const timestamp = new Date(email.date);

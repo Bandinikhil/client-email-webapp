@@ -10,6 +10,7 @@ const EmailBody = () => {
   const resInfo = useEmailListItem(id);
 
   if (resInfo === null) return null;
+//Email Body when we clicked on the particular mail it splits into two
 
   return (
     <div className="flex flex-col lg:flex-row mx-3 w-full">

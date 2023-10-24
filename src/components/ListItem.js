@@ -8,7 +8,7 @@ const ListItem = ({ data, params }) => {
   const allMails = useSelector((store) => store?.emails?.items);
   const { id, body } = data;
 
-  // Ensure selectedMail is defined before accessing its properties
+
   const selectedMail = allMails?.find((mail) => mail?.id === id);
   const selectedMailFrom = selectedMail?.from || {};
   const selectedMailName = selectedMailFrom?.name || "";
@@ -25,6 +25,7 @@ const ListItem = ({ data, params }) => {
     dispatch(addFavourite(ids));
   };
 
+  // body of the mail when we click the particular mail
   return (
     <>
       <div className="p-4 border rounded-lg shadow-sm fixed ">

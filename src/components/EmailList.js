@@ -3,6 +3,7 @@ import EmailListItem from "./EmailListItem";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setEmails } from "../utils/emailsSlice";
+import { EMAILS_LIST_API } from "../utils/constants";
 
 const EmailList = () => {
   const [emailList, setEmailList] = useState(null);
@@ -16,7 +17,7 @@ const EmailList = () => {
   const readMails = useSelector((store) => store.read.readList);
 
   const dispatch = useDispatch();
-
+// functions to store the filtered, read, unread mails to store
   const getFav = () => {
     const favEmail = emailList.filter((value) =>
       favouriteEmails.includes(value.id)
@@ -51,9 +52,9 @@ const EmailList = () => {
     setShowRead(false);
     setShowUnRead(false);
   };
-
+// async function to fetch the emails list
   const fetchEmails = async () => {
-    const data = await fetch("https://flipkart-email-mock.now.sh/");
+    const data = await fetch(EMAILS_LIST_API);
     const json = await data.json();
     setEmailList(json.list);
     dispatch(setEmails(json.list));
@@ -66,7 +67,7 @@ const EmailList = () => {
   if (!emailList) {
     return <div className="email-list">Loading...</div>;
   }
-
+// based on the onClick filters get applied and filtered data goes to the EmailListItem component
   return (
     <div className="email-list">
       <div className="email-list-header">
